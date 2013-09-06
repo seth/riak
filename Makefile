@@ -18,6 +18,9 @@ compile:
 deps:
 	./rebar get-deps
 
+locked_deps:
+	./rebar -C rebar.config.lock get-deps
+
 clean: testclean
 	./rebar clean
 
